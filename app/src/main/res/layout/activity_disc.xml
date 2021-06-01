@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_above="@+id/unitads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.vivindev.realfirewallpaper.func.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:text="@string/disclaimer"
+                android:textColor="@color/colorText1"
+                android:textSize="@dimen/big_text" />
+
+            <com.vivindev.realfirewallpaper.func.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/disc_text"
+                android:textSize="@dimen/small_text" />
+
+            <com.vivindev.realfirewallpaper.func.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp"
+                android:text="@string/takedown"
+                android:textColor="@color/colorText1"
+                android:textSize="@dimen/big_text" />
+
+            <com.vivindev.realfirewallpaper.func.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/takedown_text"
+                android:textSize="@dimen/small_text" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/report_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:elevation="6dp"
+        android:src="@drawable/ic_email"
+        app:pressedTranslationZ="12dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/unitads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>
